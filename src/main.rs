@@ -1,9 +1,8 @@
 #![feature(array_chunks)]
 
-use std::borrow::Borrow;
 use itertools::Itertools;
 use image;
-use image::{ColorType, DynamicImage, EncodableLayout, GenericImage, GenericImageView, Pixel, Rgb, Rgba, RgbaImage};
+use image::{DynamicImage, RgbaImage};
 
 fn main() {
     let mut img = DynamicImage::new_rgba8(2048, 2048).into_rgba8();
